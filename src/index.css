@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta Romina Farm, tomada del logo */
+  --color-oliva-950: #1c2913;
+  --color-oliva-900: #24350f;
+  --color-oliva-800: #2f4519;
+  --color-oliva-700: #3d5a24;
+  --color-oliva-600: #4c6f2c;
+  --color-crema-100: #f5efe0;
+  --color-crema-200: #efe4c8;
+  --color-dorado-500: #c97b2e;
+  --color-dorado-400: #e0973f;
+  --color-dorado-300: #edb066;
+
+  --font-display: "Anton", sans-serif;
+  --font-script: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-crema-100);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
