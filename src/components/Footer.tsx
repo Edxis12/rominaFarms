@@ -1,5 +1,5 @@
 import { MapPin, Phone } from "lucide-react";
-import { FacebookIcon, InstagramIcon, YoutubeIcon, TikTokIcon } from "./SocialIcons";
+import { FacebookIcon, InstagramIcon, TikTokIcon } from "./SocialIcons";
 
 export default function Footer() {
     return (
