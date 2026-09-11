@@ -14,7 +14,7 @@ const ITEMS: MediaItem[] = [
     {
         src: galeria1,
         alt: "Ambiente de palenque",
-        span: "md:col-span-2 md:row-span-2",
+        span: "col-span-2 row-span-2 md:col-span-2 md:row-span-2",
     },
     {
         src: galeria2,
@@ -34,7 +34,7 @@ const ITEMS: MediaItem[] = [
     {
         src: galeria5,
         alt: "Área de gradas del derby",
-        span: "md:col-span-2",
+        span: "col-span-2 md:col-span-2",
     },
 ];
 
@@ -43,12 +43,12 @@ export default function Gallery() {
 
     return (
         <section id="galeria" className="bg-crema-100">
-            <div className="max-w-6xl mx-auto px-5 py-24">
+            <div className="max-w-6xl mx-auto px-4 sm:px-5 py-16 sm:py-20 md:py-24">
                 <motion.p
                     initial={{ opacity: 0, y: 12 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="font-script italic text-dorado-500 text-xl mb-3"
+                    className="font-script italic text-dorado-500 text-lg sm:text-xl mb-3"
                 >
                     Momentos de la finca
                 </motion.p>
@@ -57,12 +57,12 @@ export default function Gallery() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.05 }}
-                    className="font-display text-oliva-900 text-4xl md:text-5xl mb-10"
+                    className="font-display text-oliva-900 text-3xl sm:text-4xl md:text-5xl mb-8 sm:mb-10"
                 >
                     Galería
                 </motion.h2>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[160px] md:auto-rows-[180px] gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[130px] sm:auto-rows-[160px] md:auto-rows-[180px] gap-3 sm:gap-4">
                     {ITEMS.map((it) => (
                         <button
                             key={it.src}
@@ -86,7 +86,7 @@ export default function Gallery() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-[60] bg-oliva-950/90 flex items-center justify-center p-6"
+                        className="fixed inset-0 z-[60] bg-oliva-950/90 flex items-center justify-center p-4 sm:p-6"
                         onClick={() => setActive(null)}
                     >
                         <motion.img
@@ -95,15 +95,15 @@ export default function Gallery() {
                             exit={{ scale: 0.96, opacity: 0 }}
                             src={active.src}
                             alt={active.alt}
-                            className="max-h-[85vh] max-w-full rounded-xl object-contain"
+                            className="max-h-[80vh] max-w-full rounded-xl object-contain"
                             onClick={(e) => e.stopPropagation()}
                         />
                         <button
                             aria-label="Cerrar"
                             onClick={() => setActive(null)}
-                            className="absolute top-6 right-6 text-crema-100"
+                            className="absolute top-4 right-4 sm:top-6 sm:right-6 text-crema-100 p-2"
                         >
-                            <X size={30} />
+                            <X size={28} />
                         </button>
                     </motion.div>
                 )}

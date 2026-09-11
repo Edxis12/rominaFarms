@@ -40,7 +40,7 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
 export default function Stats() {
     return (
         <section className="bg-oliva-900">
-            <div className="max-w-6xl mx-auto px-5 py-14 grid grid-cols-2 md:grid-cols-4 gap-8">
+           <div className="max-w-6xl mx-auto px-4 sm:px-5 py-10 sm:py-14 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-8 sm:gap-8">
                 {STATS.map((s, i) => (
                     <motion.div
                         key={s.label}
@@ -50,10 +50,10 @@ export default function Stats() {
                         transition={{ duration: 0.5, delay: i * 0.08 }}
                         className="text-center"
                     >
-                        <div className="font-display text-dorado-400 text-4xl md:text-5xl">
+                        <div className="font-display text-dorado-400 text-3xl sm:text-4xl md:text-5xl leading-tight">
                             <Counter value={s.value} suffix={s.suffix} />
                         </div>
-                        <p className="text-crema-200 text-sm mt-2">{s.label}</p>
+                        <p className="text-crema-200 text-xs sm:text-sm mt-2 leading-snug">{s.label}</p>
                     </motion.div>
                 ))}
             </div>
