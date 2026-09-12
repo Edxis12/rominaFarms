@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Feather, GraduationCap, Trophy, Users } from "lucide-react";
+import { Feather, GraduationCap, Swords, Handshake } from "lucide-react";
 
 const SERVICES = [
     {
@@ -13,14 +13,14 @@ const SERVICES = [
         desc: "Acompañamiento a otros criadores en selección genética, alimentación y entrenamiento.",
     },
     {
-        icon: Trophy,
-        title: "Organización de derbys",
-        desc: "Eventos con partidas justas, buen ambiente y todo lo necesario para una gran jornada.",
+        icon: Swords,
+        title: "Exhibición y participación en derbys",
+        desc: "Presentamos y ponemos a prueba nuestras líneas en derbys de distintas galleras de la región.",
     },
     {
-        icon: Users,
-        title: "Comunidad de criadores",
-        desc: "Espacio de intercambio y aprendizaje entre criadores de Culiacán y otros municipios.",
+        icon: Handshake,
+        title: "Colaboración entre galleras",
+        desc: "Trabajamos junto a otros criadores de Culiacán y otros municipios, compartiendo experiencia y buenas prácticas.",
     },
 ];
 
