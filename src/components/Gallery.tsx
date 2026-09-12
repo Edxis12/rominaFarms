@@ -7,6 +7,7 @@ import galeria2 from "../assets/Galleria2.avif";
 import galeria3 from "../assets/Galleria3.avif";
 import galeria4 from "../assets/Galleria4.avif";
 import galeria5 from "../assets/Galleria5.avif";
+import galeria6 from "../assets/galeria6.avif";
 
 type MediaItem = { src: string; alt: string; span: string };
 
@@ -32,10 +33,16 @@ const ITEMS: MediaItem[] = [
         span: "",
     },
     {
+        src: galeria6,
+        alt: "Área de gradas del derby",
+        span: "",
+    },
+    {
         src: galeria5,
         alt: "Área de gradas del derby",
         span: "col-span-2 md:col-span-2",
     },
+    
 ];
 
 export default function Gallery() {
@@ -50,7 +57,7 @@ export default function Gallery() {
                     viewport={{ once: true }}
                     className="font-script italic text-dorado-500 text-lg sm:text-xl mb-3"
                 >
-                    Momentos de la finca
+                    Momentos de la gallera
                 </motion.p>
                 <motion.h2
                     initial={{ opacity: 0, y: 12 }}
@@ -72,6 +79,8 @@ export default function Gallery() {
                             <img
                                 src={it.src}
                                 alt={it.alt}
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-oliva-950/0 group-hover:bg-oliva-950/20 transition-colors" />

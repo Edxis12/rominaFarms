@@ -44,6 +44,8 @@ export default function About() {
                     <img
                         src={aboutImage}
                         alt="Rancho y campo de Sinaloa"
+                        loading="lazy"
+                        decoding="async"
                         className="w-full aspect-[4/5] object-cover rounded-2xl"
                     />
                     <div className="absolute -bottom-4 left-4 right-4 sm:right-auto sm:-bottom-6 sm:-left-6 bg-oliva-900 text-crema-100 rounded-2xl px-5 sm:px-6 py-4 sm:py-5">

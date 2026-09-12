@@ -9,7 +9,13 @@ const SOCIALS = [
 
 export default function SocialMedia() {
     return (
-        <section id="redes" className="bg-oliva-950 py-16 sm:py-20 md:py-24">
+        <section id="redes" className="relative bg-oliva-950 py-16 sm:py-20 md:py-24">
+            <div className="absolute top-0 left-0 right-0 -translate-y-[1px]">
+                <svg viewBox="0 0 1440 60" className="w-full h-10 sm:h-14" preserveAspectRatio="none">
+                    <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z" className="fill-oliva-950" />
+                </svg>
+            </div>
+
             <div className="max-w-6xl mx-auto px-4 sm:px-5 text-center">
                 <p className="font-script italic text-dorado-300 text-lg sm:text-xl mb-3">No te pierdas nada</p>
                 <h2 className="font-display text-crema-100 text-3xl sm:text-4xl md:text-5xl mb-4">

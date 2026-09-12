@@ -25,7 +25,13 @@ const STEPS = [
 
 export default function HowItWorks() {
     return (
-        <section id="derby" className="bg-oliva-950 py-16 sm:py-20 md:py-24">
+        <section id="derby" className="relative bg-oliva-950 py-16 sm:py-20 md:py-24">
+            <div className="absolute top-0 left-0 right-0 -translate-y-[1px]">
+                <svg viewBox="0 0 1440 60" className="w-full h-10 sm:h-14" preserveAspectRatio="none">
+                    <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z" className="fill-oliva-950" />
+                </svg>
+            </div>
+
             <div className="max-w-6xl mx-auto px-4 sm:px-5">
                 <p className="font-script italic text-dorado-300 text-lg sm:text-xl mb-3">Nuestros derbys</p>
                 <h2 className="font-display text-crema-100 text-3xl sm:text-4xl md:text-5xl mb-10 sm:mb-14">Cómo funciona un derby aquí</h2>
@@ -42,7 +48,7 @@ export default function HowItWorks() {
 
                 <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ duration: 0.5, delay: 0.3 }} className="mt-12 sm:mt-16 text-center">
                     <p className="text-crema-200/90 text-sm sm:text-base mb-5">¿Quieres enterarte de la próxima fecha?</p>
-                    <a href="https://wa.me/5216670000000" target="_blank" rel="noreferrer" className="inline-block w-full sm:w-auto text-center rounded-full bg-dorado-500 text-oliva-950 font-semibold px-7 py-3 hover:bg-dorado-400 transition-colors">Escríbenos por WhatsApp</a>
+                    <a href="https://wa.me/14806527878" target="_blank" rel="noreferrer" className="inline-block w-full sm:w-auto text-center rounded-full bg-dorado-500 text-oliva-950 font-semibold px-7 py-3 hover:bg-dorado-400 transition-colors">Escríbenos por WhatsApp</a>
                 </motion.div>
             </div>
         </section>

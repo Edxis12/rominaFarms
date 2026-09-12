@@ -13,7 +13,7 @@ export default function Footer() {
                     </div>
                     <div className="flex items-center gap-3 text-crema-200 text-sm sm:text-base mb-6">
                         <Phone size={18} className="text-dorado-400 flex-shrink-0" />
-                        <span>+52 667 000 0000</span>
+                        <span>+1 (480) 652-7878</span>
                     </div>
                     <div className="flex gap-4">
                         <a href="https://www.facebook.com/profile.php?id=61577261909173&locale=es_LA" target="_blank" rel="noreferrer" className="text-crema-200 hover:text-dorado-400 p-1"><FacebookIcon size={22} /></a>
