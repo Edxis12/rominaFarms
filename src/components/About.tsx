@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import aboutImage from "../assets/rancho-about.avif";
+import aboutImage from "../assets/JuanCarlosM.avif";
 
 export default function About() {
     return (

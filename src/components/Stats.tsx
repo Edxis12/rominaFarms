@@ -5,8 +5,8 @@ type Stat = { value: number; suffix: string; label: string };
 
 const STATS: Stat[] = [
     { value: 18, suffix: " años", label: "de trayectoria en la crianza" },
-    { value: 120, suffix: "+", label: "derbys organizados" },
-    { value: 6, suffix: "", label: "líneas genéticas propias" },
+    { value: 100, suffix: "+", label: "derbys organizados" },
+    { value: 4, suffix: "", label: "líneas genéticas propias" },
     { value: 40, suffix: "+", label: "criadores aliados en Sinaloa" },
 ];
 

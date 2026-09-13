@@ -43,7 +43,7 @@ export default function SocialMedia() {
                 <p className="text-crema-200/80 text-sm sm:text-base max-w-2xl mx-auto mb-12 sm:mb-16 leading-relaxed">
                     En nuestras redes compartimos la vida diaria de la gallera y de la comunidad gallera en general:
                     nuestras experiencias, participaciones en derbys, el trabajo de cría, y las colaboraciones con
-                    otras galleras. Únete y sé parte de esta tradición.
+                    otras galleras de Sinaloa. Únete y sé parte de esta tradición.
                 </p>
 
                 {/* Highlights de qué van a encontrar */}
